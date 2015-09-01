@@ -1,0 +1,63 @@
+.pageheader, .logo, .shoptime, .reset, #additionalitem {
+	/*border: red solid 1px;*/
+	text-align: center;
+	color: white;
+}
+
+#shoppinglistsection > p {
+	text-align: center;
+	color: white;
+	font-size: 2rem;
+	font-family: 'Cantarell', cursive;
+}
+.logo {
+	border: 2px solid white;
+	color: lime;
+}
+
+button, input {
+	border: red solid 1px;
+	color: white;
+	width: 30%; 
+	height: 2.5rem;
+	vertical-align: middle;
+	text-align: center;
+	margin-left: 35%;
+	margin-right: 35%;
+}
+.shoptime {
+	font-size: 4rem;
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+
+/*.logo {insert <i class="fa fa-shopping-cart"></i>*/
+
+
+body {
+	background-color: #292933;
+}
+.list > div {
+	width: 35rem; 
+	margin-left: auto;
+	margin-right: auto;
+	border: solid 1px red;
+	color:white;
+	display: block;
+	padding: 0rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.item1, .item2 {
+	background-color: #00FF99;
+}
+
+.item3, .item4 {
+	background-color: #FF6666;
+}
+
+.item5 {
+	background-color: #FF3300;
+}

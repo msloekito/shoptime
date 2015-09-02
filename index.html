@@ -3,8 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="js/script.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="script" type="" href="js/script.js">
 	<link href='https://fonts.googleapis.com/css?family=Arimo:400italic,700italic|Ubuntu:400,700italic|Cantarell:400,400italic,700italic|Condiment|Gloria+Hallelujah' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
@@ -17,15 +18,15 @@
 	<hr>
 	<div id="shoppinglistsection">
 	<p>add item here and press enter</p>
-	<input id="additionalitem" type="text" name="additionalitems">
-	<div class="list">
-	<div class="item1"><p>item one</p></div>
-	<div class="item2"><p>item two</p></div>
-	<div class="item3"><p>this one is done</p></div>
-	<div class="item4"><p>this one is also done</p></div>
-	<div class="item5"><p>this one is done too</p></div>
-	</div>
-	<button class="reset"> reset list</button> 
+	<input id="additionalitem" type="text" name="additionalitem"><button id="button1"> submit </button>
+	<ul class="list">
+	<li>item one</li>
+	<li>item two</li>
+	<li>this one is done</li>
+	<li>this one is also done</li>
+	<li>this one is done too</li>
+	</ul>
+	<button id="reset">reset list</button> 
 	</div>
 </body>
 </html>	

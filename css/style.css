@@ -1,7 +1,12 @@
+/*@media only screen and (max-width: 500px) {
+    .shoptime {
+        font-size: 3em;
+    }
+}*/
 .pageheader, .logo, .shoptime, .reset, #additionalitem {
 	/*border: red solid 1px;*/
 	text-align: center;
-	color: white;
+	color: black;
 }
 
 #shoppinglistsection > p {
@@ -17,7 +22,7 @@
 
 button, input {
 	border: red solid 1px;
-	color: white;
+	color: black;
 	width: 30%; 
 	height: 2.5rem;
 	vertical-align: middle;
@@ -37,20 +42,23 @@ button, input {
 body {
 	background-color: #292933;
 }
-.list > div {
+.list > li {
 	width: 35rem; 
 	margin-left: auto;
 	margin-right: auto;
-	border: solid 1px red;
 	color:white;
 	display: block;
 	padding: 0rem;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 	font-family: 'Ubuntu', sans-serif;
+	background-color: #00FF99
 }
 
-.item1, .item2 {
+.list > .clicked {
+	background-color: #FF6666;
+}
+/*.item1, .item2 {
 	background-color: #00FF99;
 }
 

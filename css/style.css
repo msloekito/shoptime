@@ -12,16 +12,17 @@
 #shoppinglistsection > p {
 	text-align: center;
 	color: white;
-	font-size: 2rem;
-	font-family: 'Cantarell', cursive;
+	font-size: 1.5rem;
+	font-family: 'Share', cursive;
+
 }
 .logo {
-	border: 2px solid white;
-	color: lime;
+	/*order: 2px solid white;*/
+	color: #99FF99;
 }
 
-button, input {
-	border: red solid 1px;
+input {
+	/*border: red solid 1px;*/
 	color: black;
 	width: 30%; 
 	height: 2.5rem;
@@ -29,10 +30,23 @@ button, input {
 	text-align: center;
 	margin-left: 35%;
 	margin-right: 35%;
+	font-family: 'Share', cursive;
+}
+
+button {
+	width: auto;
+	vertical-align: middle;
+	margin:0 auto;
+	font-family: 'Share', cursive;
+}
+input #button1 {
+	display: inline-block;
 }
 .shoptime {
 	font-size: 4rem;
-	font-family: 'Gloria Hallelujah', cursive;
+	font-family: 'Share', cursive;
+	font-style: italic;
+	color: white;
 }
 
 
@@ -42,21 +56,32 @@ button, input {
 body {
 	background-color: #292933;
 }
-.list > li {
-	width: 35rem; 
+.list > p {
+	width: 25rem; 
 	margin-left: auto;
 	margin-right: auto;
 	color:white;
 	display: block;
 	padding: 0rem;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-	font-family: 'Ubuntu', sans-serif;
-	background-color: #00FF99
+	margin-top: .2rem;
+	margin-bottom: .2rem;
+	padding-left: -1px;
+	font-family: 'Share', cursive;
+	font-size: 1.8rem;
+	background-color: #00CC66;
+	border: 3px solid #009900;
+	border-radius: 5px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	text-align: left;
+	text-indent: 2px;
+	text-transform: uppercase;
+	font-style: italic;
 }
 
 .list > .clicked {
-	background-color: #FF6666;
+	text-decoration: line-through;
+	background-color: #435E43;
 }
 /*.item1, .item2 {
 	background-color: #00FF99;

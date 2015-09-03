@@ -1,13 +1,20 @@
 $(document).ready (function (){
-	$("#button1").mousedown(function(){	
 
+	$("#button1").mousedown(function(e){			
 		var newItem = $("#additionalitem").val();
-		$(".list").prepend("<li>"+ $(newItem).selector +"</li>");
-		console.log($(newItem).selector);
-		$("#additionalitem").val("");
-			/*ask about resetting form*/
-			/*ask about .selector*/
-	});
+		
+		if ($("#additionalitem").val()==="") {
+			console.log("no entry");
+			return false;}
+		else
+			{
+				$(".list").prepend("<p>"+ newItem +"</p>");
+				$(".list").fadeIn();
+				console.log(newItem);
+				$("#additionalitem").val("");
+			}
+		})
+	
 
 	$("input").keydown(function(enter) {
 		if (enter.keyCode == 13) {
@@ -16,10 +23,18 @@ $(document).ready (function (){
 	})
 
 	function addItem() {
-		var newItem = $("#additionalitem").val();
-		$(".list").prepend("<li>"+ $(newItem).selector +"</li>")
-		$("#additionalitem").val("");
+
+		if ($("#additionalitem").val()==="") {
+			console.log("no entry");
+			return false;}
+		else
+			{
+				var newItem = $("#additionalitem").val();
+				$(".list").prepend("<p>"+ newItem +"</p>")
+				$("#additionalitem").val("");
+			}
 	}
+	
 	//$("input").keypress(function(e){	
 
 		/*if (e.keycode == 13) 
@@ -33,13 +48,13 @@ $(document).ready (function (){
 		/*}
 		else {}
 	});*/
-	$("ul").on('click','li', function(){
+	$(".list").on('click','p', function(){
 
 		$(this).toggleClass('clicked');
 	})
 
 	$("#reset").mousedown(function(){
-
-		$("li").text("")
+		$(".clicked").fadeOut("500")
 	})
-});
+
+})

@@ -21,6 +21,9 @@
 	color: #99FF99;
 }
 
+#shoppinglistsection {
+	margin: 0 auto;
+}
 input {
 	/*border: red solid 1px;*/
 	color: black;

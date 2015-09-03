@@ -8,7 +8,7 @@ $(document).ready (function (){
 			return false;}
 		else
 			{
-				$(".list").prepend("<p>"+ newItem +"</p>");
+				$(".list").prepend("<p class='hvr-icon-fade'>"+ newItem +"</p>");
 				$(".list").fadeIn();
 				console.log(newItem);
 				$("#additionalitem").val("");
@@ -30,7 +30,7 @@ $(document).ready (function (){
 		else
 			{
 				var newItem = $("#additionalitem").val();
-				$(".list").prepend("<p>"+ newItem +"</p>")
+				$(".list").prepend("<p class='hvr-icon-fade'>"+ newItem +"</p>")
 				$("#additionalitem").val("");
 			}
 	}

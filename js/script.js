@@ -8,8 +8,7 @@ $(document).ready (function (){
 			return false;}
 		else
 			{
-				$(".list").prepend("<p class='hvr-icon-fade'>"+ newItem +"</p>");
-				$(".list").fadeIn();
+				$("<p class='hvr-shrink'>"+ newItem +"</p>").hide().prependTo(".list").fadeIn("slow");
 				console.log(newItem);
 				$("#additionalitem").val("");
 			}
@@ -30,7 +29,7 @@ $(document).ready (function (){
 		else
 			{
 				var newItem = $("#additionalitem").val();
-				$(".list").prepend("<p class='hvr-icon-fade'>"+ newItem +"</p>")
+				$("<p class='hvr-shrink'>"+ newItem +"</p>").hide().prependTo(".list").fadeIn("slow");
 				$("#additionalitem").val("");
 			}
 	}
